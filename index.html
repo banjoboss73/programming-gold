@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Art of the World</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css"/>
+    <script src="https://kit.fontawesome.com/bef20f033d.js" crossorigin="anonymous"></script>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    
+  </head>
+
+  <body style="background-color: black">
+    <section id="header">
+     <div class="header container">
+       <div class="nav-bar">
+        <div class="brand">
+          <a href="hero"></a>
+          <h1>Art of the World</h1>
+        </div>
+      <div class="nav-list">
+        <div class="hamburger">
+          <div class="bar"></div>
+        </div>
+        <ul>
+          <li><a href="#home" id="homelink">Home</a></li>
+          <li><a href="#americas" id="americalink">The Americas</a></li>
+          <li><a href="#africa" id="africalink">Africa</a></li>
+          <li><a href="#location" id="locationlink">Location</a></li>
+        </ul>
+        </div>
+       </div>
+      </div>
+    </section>
+
+<!-- Javascript for Header-->
+<script>
+  const hamburger = document.querySelector('.header .nav-bar .nav-list .hamburger');
+  const mobile_menu = document.querySelector('.header .nav-bar .nav-list ul');
+  const menu_item = document.querySelectorAll('.header .nav-bar .nav-list ul li a');
+  const header = document.querySelector('.header.container');
+
+  hamburger.addEventListener('click', () => {
+	  hamburger.classList.toggle('active');
+	  mobile_menu.classList.toggle('active');
+  });
+
+  document.addEventListener('scroll', () => {
+	  var scroll_position = window.scrollY;
+	  if (scroll_position > 250) {
+	  	header.style.backgroundColor = '#29323c';
+	  } else {
+	  header.style.backgroundColor = 'transparent';
+  	}
+  });
+
+  menu_item.forEach((item) => {
+	  item.addEventListener('click', () => {
+		  hamburger.classList.toggle('active');
+		  mobile_menu.classList.toggle('active');
+	  });
+  });
+</script>
+<!--End of Javascript-->
+
+    <p style="position: relative">
+      <br>
+      What unites mankind as a species is our natural tendency to be creative
+      and our innovativeness must not go unknown.<br />Here we celebrate the
+      most spectacular pieces, not just from the West, but other regions where
+      artists have pushed boundaries to create marvels.
+    </p>
+    <p>
+      We will be looking at some of the most recognizable pieces from four
+      continents:
+    </p>
+    <h2>Europe</h2>
+    <div class="slideshow-container">
+      <div class="mySlides1">
+        <img src="europe/the scream.jpeg" style="width: 100%;" />
+        <div class="text">The Scream by Edvard Munch</div>
+      </div>
+
+      <div class="mySlides1">
+        <img src="europe/starry night.jpeg" style="width: 100%;" />
+        <div class="text">Starry Night by Vincent Van Gogh</div>
+
+      </div>
+
+      <div class="mySlides1">
+        <img src="europe/mona lisa.jpeg" style="width: 100%;" />
+        <div class="text">Mona Lisa by Leonardo da Vinci</div>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+    </div>
+    
+    <p>Western art has seen many changes throughout its many years if existence. Most painings up until the mid-19th century were made in&nbsp;service to the church or royalty. As Europe started industrialising, painters started to move away from creating traditional pieces of&nbsp;art, such as The Scream, to art which addresses social issues faced by people of middle and lower classes.
+      <br> An overview of paintings styles in Europe are: 
+      <dl class="row">
+        <dt class="col-sm-3">Expressionism</dt>
+        <dd class="col-sm-9">As indicated by the word 'expression', expressionists use emotion and blend it with reality. This is done by using unusual mixtures of colours to invoke the artists' feelings on the viewer.</dd>
+        <dt class="col-sm-3 text-truncate">Abstract</dt>
+        <dd class="col-sm-9">As one of the more recent art styles to rise in popularity, many viewers feel it is an effortless mixture of colours without any meaning.</dd>
+        <dt class="col-sm-3">Traditional</dt>
+        <dd class="col-sm-9">Most popular during the Renaisance, these pieces would be used in churches as large murals or even as small portraits. Traditional art takes reality as it is, using its accuracy and detail to amaze viewers.
+        </dd>
+      </dl>
+    </p>
+
+    
+
+
+    <div class="header">
+    <h2 style="margin-top: 100px">Asia</h2>
+    <div class="slideshow-container">
+      <div class="mySlides2">
+        <img src="asia/the great wave.jpeg" style="width: 100%" />
+        <div class="text">
+          The Great Wave off Kanagawa by Katsushika Hokusai
+        </div>
+      </div>
+
+      <div class="mySlides2">
+        <img src="asia/akbar.jpeg" style="width: 100%" />
+        <div class="text">Akbar's entry into Surat by Farrukh Beg</div>
+      </div>
+
+      <div class="mySlides2">
+        <img src="asia/mandala of chandra.jpeg" style="width: 100%" />
+        <div class="text">Mandala of Chandra</div>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+    </div>
+    
+    <p>Art from the Asian continents vary depending on the region they originate from. It is less unified than European art because each country has its own distinct culture.
+    <br>This is art from three regions in Asia:
+    <dl class="row">
+        <dt class="col-sm-3">Japan</dt>
+        <dd class="col-sm-9">Many well-known pieces from this region were created during Japan's feudal era. Art from this period was largely done on a woodblock print. Ukiyo-e would use this style to depict tantalising characters such as sumo-wrestlers, samurai or beautiful women.
+        </dd>
+        <dt class="col-sm-3 text-truncate">Mughal India</dt>
+        <dd class="col-sm-9">Thanks to the Mughal emperor, Akbar, Mughal art was recorded in manuscripts and kept in libraries. Mughal art would require a team of artists who specialised in caligraphy, bookbinding, or illumimnation.</dd>
+        <dt class="col-sm-3">Traditional</dt>
+        <dd class="col-sm-9">Most popular during the Renaisance, these pieces would be used in churches as large murals or even as small portraits. Traditional art takes reality as it is, using its accuracy and detail to amaze viewers.
+        </dd>
+      </dl>
+    </p>
+
+    <div class="footer">
+      <div class="row">
+        <div class="col-1">
+          <h3>Useful links</h3>
+          <a href="#">About</a>
+          <a href="#">Galleries</a>
+          <a href="#">Contact</a>
+          <a href="#">Shop</a>
+        </div>
+        <div class="col-2">
+          <h3>Magazine</h3>
+          <form>
+            <input type="email" placeholder="Your Email Address" required>
+            <br>
+            <button type="submit">SUBSCRIBE</button>
+          </form>
+        </div>
+        <div class="col-3">
+          <h3>Contact Us!</h3>
+          <p>XYZ, Trevelyan College, Durham University <br> Durham, England </p>
+          <div class="social-icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-behance"></i>
+          </div>        
+        </div>
+      </div>  
+    </div>
+    
+    <script>
+      let slideIndex = [1, 1];
+      let slideId = ["mySlides1", "mySlides2"];
+      showSlides(1, 0);
+      showSlides(1, 1);
+
+      function plusSlides(n, no) {
+        showSlides((slideIndex[no] += n), no);
+      }
+
+      function showSlides(n, no) {
+        let i;
+        let x = document.getElementsByClassName(slideId[no]);
+        if (n > x.length) {
+          slideIndex[no] = 1;
+        }
+        if (n < 1) {
+          slideIndex[no] = x.length;
+        }
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        x[slideIndex[no] - 1].style.display = "block";
+      }
+    </script>
+  </body>
+</html>
+
+
+<!--Link for Bootstrap. Bootstrap, "Introduction", getboostrap.com. https://getbootstrap.com/docs/4.3/getting-started/introduction/-->
+<!--Slides. W3Schools, “How to Create a Slideshow,” W3schools.com, 2019. https://www.w3schools.com/howto/howto_js_slideshow.asp-->
+<!--Footer. “How to make website footer using HTML and CSS | footer design for website,” YouTube, 07-Apr-2022. [Online]. Available: https://www.youtube.com/watch?v=lLdzlLL33G8&amp;t=72s&amp;ab_channel=EasyTutorials. [Accessed: 28-Nov-2022].-->
+<!--Social media icons. "How to use", Font Awesome, [Online]. https://fontawesome.com/kits/bef20f033d/use [Accessed: 28-Nov-2022] -->
+
+<!--Expressionism. The Editors of Encyclopaedia, “Expressionism,” Encyclopædia Britannica, 20-Oct-2022. [Online]. Available: https://www.britannica.com/art/Expressionism. [Accessed: 28-Nov-2022]. -->
+<!--Abstract. Rise Art, “What is abstract art? The Complete Guide,” Rise Art, 18-Jun-2020. [Online]. Available: https://www.riseart.com/guide/2366/guide-to-abstract-art. [Accessed: 28-Nov-2022]. -->
+<!--Traditional. “Art of Europe,” Wikipedia, 16-Nov-2022. [Online]. Available: https://en.wikipedia.org/wiki/Art_of_Europe. [Accessed: 28-Nov-2022].-->
+<!--Japan. "Japanese woodblock prints (Ukiyo-e),” Victoria and Albert Museum, 25-Oct-2020. [Online]. Available: https://www.vam.ac.uk/articles/japanese-woodblock-prints-ukiyo-e. [Accessed: 28-Nov-2022].-->
+<!--Mughal India []. V&M, "The arts of the Mughal Empire", vam.ac.uk. https://www.vam.ac.uk/articles/the-arts-of-the-mughal-empire -->
+
+
