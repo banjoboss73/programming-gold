@@ -6,8 +6,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "devDependencies": {
-    "eslint": "^8.28.0",
+    "eslint": "^8.29.0",
     "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-node": "^4.1.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
@@ -23,5 +24,13 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/banjoboss73/programming-gold.git"
+  },
+  "bugs": {
+    "url": "https://github.com/banjoboss73/programming-gold/issues"
+  },
+  "homepage": "https://github.com/banjoboss73/programming-gold#readme"
 }
