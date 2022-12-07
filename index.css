@@ -231,6 +231,10 @@
   top: 0;
 }
 
+#locationlink :hover {
+  background-image: url(header/thinking\ man.jpeg);
+}
+
 #americalink :hover {
   background-image: url(header/aztec.jpeg);
 }
@@ -239,9 +243,7 @@
   background-image: url(header/africa.jpeg);
 }
 
-#locationlink :hover {
-  background-image: url(header/thinking\ man.jpeg);
-}
+
 
 /* Website Footer */
 * {
@@ -310,6 +312,3 @@ form button{
   margin: 10px;
   cursor: pointer;
 } 
-
-
-

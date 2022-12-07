@@ -54,3 +54,5 @@ function showSlides(n, no) {
   x[slideIndex[no] - 1].style.display = "block";
 }
 
+// Data to make pie charts
+
