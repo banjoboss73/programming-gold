@@ -56,7 +56,7 @@ function showSlides(n, no) {
 import {PieChart} from "@d3/pie-chart"
 
 // Data to make pie charts
-function PieChart(data, {
+function PieChart (data, {
   name = ([x]) => x, // given d in data, returns the (ordinal) label
   value = ([, y]) => y, // given d in data, returns the (quantitative) value
   title, // given d in data, returns the title text
