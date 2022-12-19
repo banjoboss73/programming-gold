@@ -1,108 +1,111 @@
-  h1 {
-    text-align: center;
-    font-family: 'Playfair Display', serif;
-    color: white;
-  }
+h1 {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  color: white;
+}
 
-  p {
-    font-family: 'Playfair Display', serif;
-    margin-top: 20px;
-    margin-left: 5px;
-    color: #f1f1f1
-  }
 
-  body {
-    font-family: 'Playfair Display', serif;
-    margin: 0;
-  }
 
-  h2 {
-    font-family: Georgia, serif;
-    margin-left: 5px;
-    color: white;
-    margin-top: 30px;
-    margin-left: 10px;
-  }
+p {
+  font-family: 'Playfair Display', serif;
+  margin-top: 20px;
+  margin-left: 5px;
+  color: #f1f1f1
+}
 
-  dl {
-    color: #f1f1f1;
-    font-family: 'Playfair Display', serif;
-  }
+body {
+  font-family: 'Playfair Display', serif;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+}
 
-  h3 {
-    color: #f1f1f1;
-  }
+h2 {
+  font-family: Georgia, serif;
+  margin-left: 5px;
+  color: white;
+  margin-top: 30px;
+  margin-left: 10px;
+}
+
+dl {
+  color: #f1f1f1;
+  font-family: 'Playfair Display', serif;
+}
+
+h3 {
+  color: #f1f1f1;
+}
   
-  /* Slides */
-  * {
-    box-sizing: border-box;
-  }
-  .mySlides1,
-  .mySlides2 {
-    display: none;
-  }
-  img {
-    vertical-align: middle;
+/* Slides */
+* {
+  box-sizing: border-box;
+}
+.mySlides1,
+.mySlides2 {
+  display: none;
+}
+img {
+  vertical-align: middle;
    
-  }
+}
 
-  /* Container for slideshows */
-  .slideshow-container {
-    max-width: 250px;
-    max-height: 250px; 
-    position: relative;
-    margin: auto;
-    float: right;
-    margin-right: 15px;
-    object-fit: contain;
-  }
+/* Container for slideshows */
+.slideshow-container {
+  max-width: 250px;
+  max-height: 250px; 
+  position: relative;
+  margin: auto;
+  float: right;
+  margin-right: 15px;
+  object-fit: contain;
+}
 
-  img .slideshow-container{
-    max-height: 250px 
-    
-  }
+img .slideshow-container{
+  max-height: 250px     
+}
 
-  /* Caption text for slides */
-  .text {
-    color: #f1f1f1;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: relative;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-    font-family: 'Playfair Display', serif;
-  }
+/* Caption text for slides */
+.text {
+  color: #f1f1f1;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: relative;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+}
 
-  /* Arrows to switch slides */
-  .prev,
-  .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
+/* Arrows to switch slides */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
 
-  /* Next arrow on the right-hand side */
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
+/* Next arrow on the right-hand side */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
 
-  /* On hover, add a grey background color */
-  .prev:hover,
-  .next:hover {
-    background-color: #f1f1f1;
-    color: black;
-  }
+/* On hover, add a grey background color */
+.prev:hover,
+.next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
 
 /* Header */
 #header{
