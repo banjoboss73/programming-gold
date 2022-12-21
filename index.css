@@ -1,7 +1,7 @@
 h1 {
   text-align: center;
   font-family: 'Playfair Display', serif;
-  color: white;
+  color: #efefef;
 }
 
 
@@ -23,7 +23,7 @@ body {
 h2 {
   font-family: Georgia, serif;
   margin-left: 5px;
-  color: white;
+  color: cadetblue;
   margin-top: 30px;
   margin-left: 10px;
 }
@@ -33,9 +33,14 @@ dl {
   font-family: 'Playfair Display', serif;
 }
 
+
 h3 {
-  color: #f1f1f1;
+  font-family: Georgia, serif;
+  color: #f1600d;
 }
+
+p.caption {color: #b2bbc5;}
+
   
 /* Slides */
 * {
@@ -67,7 +72,7 @@ img .slideshow-container{
 
 /* Caption text for slides */
 .text {
-  color: #f1f1f1;
+  color: #b2bbc5;
   font-size: 15px;
   padding: 8px 12px;
   position: relative;
@@ -107,6 +112,8 @@ img .slideshow-container{
   color: black;
 }
 
+
+
 /* Header */
 #header{
   position: fixed;
@@ -135,7 +142,7 @@ img .slideshow-container{
 #header .nav-list ul{
   list-style:none;
   position:absolute;
-  background-color: rgb(173, 149, 128);
+  background-color: #ad9580;
   width: 100vw;
   height: 100vh;
   left: 100%;
@@ -299,8 +306,8 @@ form input{
 
 form button{
   background: transparent;
-  border: 2px solid #fff;
-  color: #fff;
+  border: 2px solid cadetblue;
+  color: #f1f1f1;
   border-radius: 30px;
   padding: 10px;
   font-size: 15px;
@@ -309,9 +316,15 @@ form button{
 
 .social-icons{
   margin-top: 30px;
+  color: cadetblue;
 }
 .social-icons i{
   font-size: 22px;
   margin: 10px;
   cursor: pointer;
 } 
+
+a.footertext {color: #bfa48c;}
+p.footertext {color: #bfa48c;}
+
+.piechart {text-align: center;}

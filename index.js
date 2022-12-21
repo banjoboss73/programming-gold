@@ -52,8 +52,6 @@ function showSlides(n, no) {
   x[slideIndex[no] - 1].style.display = 'block';
 }
 
-// Javascript for doughnut chart
-
 // set the dimensions and margins of the graph
 const width = 450;
 const height = 450;
@@ -75,12 +73,12 @@ const data = { Argentine: 139, Australian: 56, Austrian: 243, Belgian: 89, Brazi
   British: 835, Canadian:196, Chilean: 61, Chinese: 81, Colombian: 42, Croatian: 25,
   Cuban: 58, Czech:83, Danish: 119, Dutch: 265, Finnish:60, French: 839, German: 930, Hungarian:52, 
   Indian: 28, Irish:19, Israeli: 75, Italian:531, Japanese: 598, Korean: 35, Mexican:128, Norwegian:49, 
-  Peruvian:34, Polish: 125, Russian: 188, Scottish: 28, South African: 69, Spanish: 153, Swedish: 130, Swiss: 280,
-  Turkish: 26, Venezuelan:41,Yugoslav: 41 }
+  Peruvian:34, Polish: 125, Russian: 188, Scottish: 28, SAfrican: 69, Spanish: 153, Swedish: 130, Swiss: 280,
+  Turkish: 26, Venezuelan:41,Yugoslav: 41}
 
 // set the color scale
 const color = d3.scaleOrdinal()
-  .range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56"])
+  .range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"])
 
 // Compute the position of each group on the pie:
 const pie = d3.pie()
@@ -100,3 +98,16 @@ svg
   .attr('stroke', 'black')
   .style('stroke-width', '2px')
   .style('opacity', 0.7);
+
+var labels = svg.selectAll('path').insert("text").data(pie(data))
+       .text( function (d) { return d.value; })
+       .attr("font-family", "sans-serif")
+       .attr('x', 0)           
+       .attr('y', 0)
+       .attr("font-size", "12px")
+       .attr("fill", "red")
+
+
+       const barMargin = {top: 30, right: 30, bottom: 70, left: 60},
+       barWidth = 460 - margin.left - margin.right,
+       barHeight = 400 - margin.top - margin.bottom;
