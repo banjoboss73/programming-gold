@@ -4,10 +4,20 @@ A website showing some of the most significant pieces of art throughout history 
 
 # How to open
 
-# Structure
+# Header
+
 The website starts with a header, showing the title 'Art of the World' on the top-left corner.
 When scrolling down, the background color presents itself.
 
 Clicking on the three bars, and selecting any of the drop downs allows you to navigate the different parts of the website.
 
+- These include:
+  - Europe
+  - Asia
+  - Africa
+  - Pie Chart
 
+# Art section
+- To best visualise and explain to the viewer the common styles of these art works,
+two features are used:
+   - Slides: 
