@@ -2,7 +2,7 @@
 
 A website showing some of the most significant pieces of art throughout history in the continets of Europe and Asia. The dataset contains famous art and outlines which genres are most likely to become significant pieces.
 
-# How to open
+# Opening the website
 
 # Header
 
@@ -18,6 +18,7 @@ Clicking on the three bars, and selecting any of the drop downs allows you to na
   - Pie Chart
 
 # Art section
+
 - To best visualise and explain to the viewer the common styles of these art works,
-two features are used:
-   - Slides: 
+  two features are used:
+  - Slides:
