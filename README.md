@@ -3,6 +3,7 @@
 A website showing some of the most significant pieces of art throughout history in the continets of Europe and Asia. The dataset contains famous art and outlines which genres are most likely to become significant pieces.
 
 ## Opening the website
+<<<<<<< HEAD
 
 Using the terminal and navigating to the directory, the code can be loaded onto a web server using the python shell.
 
@@ -12,6 +13,11 @@ Using the terminal and navigating to the directory, the code can be loaded onto 
 
 ## Header
 
+=======
+
+
+## Structure
+>>>>>>> 7b9a01a5293ff9bf51cf95d4fcfe1af5ff70bd38
 The website starts with a header, showing the title 'Art of the World' on the top-left corner.
 When scrolling down, the background color presents itself.
 
